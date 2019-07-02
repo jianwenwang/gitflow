@@ -10,7 +10,7 @@ def hello_world():
 
 @app.route('/queryUser')
 def query_user():
-    return json.dumps([])
+    return json.dumps([{'id':1,'name':'沈航宇'}])
 
 	
 if __name__ == '__main__':
