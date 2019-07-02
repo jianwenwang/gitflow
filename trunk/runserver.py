@@ -12,6 +12,9 @@ def hello_world():
 def query_user():
     return json.dumps([{'id':1,'name':'沈航宇'},{'id':2,'name':'耿达达'}])
 
-	
+@app.route('/deleteUser')
+def delete_user()
+    return json.dumps({'code':10,'data':'','msg':'ok'})
+
 if __name__ == '__main__':
     app.run('0.0.0.0', 5000, debug=True)
