@@ -6,8 +6,11 @@ app = Flask(__name__)
 @app.route('/')
 def hello_world():
     return json.dumps({'code':10,'data':[],'msg':'hello world!'})
-	
 
+@app.route('/getUser')
+def get_user():
+    return json.dumps({'id':1,'name':'耿达达'})
+	
 @app.route('/queryUser')
 def query_user():
     return json.dumps([{'id':1,'name':'沈航宇'},{'id':2,'name':'耿达达'}])
