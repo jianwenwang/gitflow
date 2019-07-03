@@ -26,4 +26,7 @@ def change_mobile()
 	print('changed succeed!')
 
 if __name__ == '__main__':
+    print('start run!')
     app.run('0.0.0.0', 5000, debug=True)
+	print('start succeed!')
+
