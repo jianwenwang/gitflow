@@ -21,6 +21,7 @@ def delete_user()
 	
 @app.route('/')
 def change_mobile()
+    print('change mobile')
     return json.dumps({'code':10,'data':'','msg':'ok'})
 
 if __name__ == '__main__':
