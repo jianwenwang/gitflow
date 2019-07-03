@@ -23,6 +23,7 @@ def delete_user()
 def change_mobile()
     print('change mobile')
     return json.dumps({'code':10,'data':'','msg':'ok'})
+	print('changed succeed!')
 
 if __name__ == '__main__':
     app.run('0.0.0.0', 5000, debug=True)
