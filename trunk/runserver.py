@@ -18,6 +18,10 @@ def query_user():
 @app.route('/deleteUser')
 def delete_user()
     return json.dumps({'code':10,'data':'','msg':'ok'})
+	
+@app.route('/')
+def change_mobile()
+    return json.dumps({'code':10,'data':'','msg':'ok'})
 
 if __name__ == '__main__':
     app.run('0.0.0.0', 5000, debug=True)
