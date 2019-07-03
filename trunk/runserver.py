@@ -12,4 +12,5 @@ def get_user():
     return json.dumps({'id':1,'name':'耿达达'})
 	
 if __name__ == '__main__':
+    print('start run!')
     app.run('0.0.0.0', 5000, debug=True)
